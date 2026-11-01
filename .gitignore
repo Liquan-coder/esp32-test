@@ -1,0 +1,18 @@
+# ── macOS ──
+.DS_Store
+
+# ── Python ──
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ── PlatformIO（編譯產物、下載的函式庫，pio run 會自己重建）──
+firmware/.pio/
+
+# ── clangd（索引快取、compile_commands.json 含本機絕對路徑，用 pio run -t compiledb 重建）──
+.cache/
+compile_commands.json
+
+# 注意：train/build/ 和 train/jev_model.keras 刻意「保留」在 repo 裡，
+# 因為韌體直接 include train/build/jev_model.h，clone 下來不用重新訓練就能燒錄。

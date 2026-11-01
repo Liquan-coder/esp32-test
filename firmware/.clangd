@@ -1,0 +1,9 @@
+# 給編輯器的 clangd 看的設定（不影響 pio 編譯）
+CompileFlags:
+  # 指定 ESP32 的編譯器，clangd 會問它「標準標頭檔放哪裡」（要搭配 --query-driver 允許）
+  Compiler: /Users/liquan/.platformio/packages/toolchain-xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++
+  # ESP32 gcc 專用參數，clang 看不懂會報錯，刪掉
+  Remove: [-mlongcalls, -mdisable-hardware-atomics, -fstrict-volatile-bitfields, -fno-tree-switch-conversion]
+  # clang 不支援 xtensa 晶片：假裝是 xtensa，標頭檔才走 ESP32 分支
+  # -fno-blocks：Mac 的 clang 預設把 __block 當關鍵字，ESP32 程式碼拿它當變數名
+  Add: [-D__XTENSA__, -fno-blocks]

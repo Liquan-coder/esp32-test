@@ -1,0 +1,11 @@
+{
+  // 允許 clangd 詢問 ESP32 編譯器「標準標頭檔放哪」（預設不准執行外部程式）
+  "clangd.arguments": ["--query-driver=/Users/liquan/.platformio/packages/toolchain-*/bin/*"],
+  // C++ 提示只交給 clangd，關掉 cpptools 避免重複報錯
+  "C_Cpp.intelliSenseEngine": "disabled",
+  // 側邊欄藏起自動產生的資料夾
+  "files.exclude": {
+    "**/.pio": true,
+    "**/.cache": true
+  }
+}

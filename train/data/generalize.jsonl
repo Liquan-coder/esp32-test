@@ -1,0 +1,12 @@
+{"text": "弄成大海的顏色", "intent": "SET_COLOR", "color": "BLUE"}
+{"text": "換成天空的顏色", "intent": "SET_COLOR", "color": "BLUE"}
+{"text": "燈光變成草莓色", "intent": "SET_COLOR", "color": "RED"}
+{"text": "像火焰一樣的顏色", "intent": "SET_COLOR", "color": "RED"}
+{"text": "像檸檬一樣的顏色", "intent": "SET_COLOR", "color": "YELLOW"}
+{"text": "換成香蕉的顏色", "intent": "SET_COLOR", "color": "YELLOW"}
+{"text": "換成葡萄的顏色", "intent": "SET_COLOR", "color": "PURPLE"}
+{"text": "變成森林的顏色", "intent": "SET_COLOR", "color": "GREEN"}
+{"text": "照明開啟", "intent": "ON", "color": "NONE"}
+{"text": "照明關閉", "intent": "OFF", "color": "NONE"}
+{"text": "光線太弱", "intent": "BRIGHTER", "color": "NONE"}
+{"text": "光線太強", "intent": "DIMMER", "color": "NONE"}
